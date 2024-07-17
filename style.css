@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-image: url(./images/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.section {
+  width: 90%;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+nav {
+  margin-bottom: 3rem;
+}
+nav img {
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 1.4rem;
+}
+.container img {
+  width: 90%;
+  margin: auto;
+}
+.textcontainer {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  letter-spacing: -1px;
+  line-height: 23px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 1.4rem;
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  margin-top: 28px;
+  padding: 1rem 7.8rem;
+  border-radius: 25px;
+  border: none;
+  color: purple;
+  font-size: 14px;
+}
+.social {
+  margin-top: 5rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+  color: white;
+  padding-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MEDIA QUERY */
+@media (width > 760px) {
+  .social {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container img {
+    width: 100%;
+  }
+  nav img {
+    width: 20%;
+    margin-left: -0.3rem;
+  }
+
+  .textcontainer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: left;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+  p {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    width: 97%;
+    text-align: left;
+  }
+  button{
+    padding: 0.9rem 4.4rem;
+  }
+  
+}
